@@ -26,6 +26,105 @@ for x in lista_numeri:
     quadrato = x * x
     print(quadrato)
 #esercizio punto 4
-lista_numeri = [4, 7, 2, 10, 5]
 
 
+
+
+
+#esercizio ciclo while
+
+numeri = []
+
+x = int(input("Inserisci un numero: "))
+
+while x != 0:
+    numeri.append(x)
+    x = int(input("Inserisci un numero: "))
+
+somma = 0
+
+for x in numeri:
+    somma = somma + x
+
+print("La somma è:", somma)
+#esercizio ciclo for
+ripetuto = False
+
+while True:
+
+    parola = input("Inserisci una parola: ")
+
+    for x in parola:
+        print(x)
+
+    if ripetuto == True:
+        break
+
+    scelta = input("Vuoi ripetere? si/no: ")
+
+    if scelta == "no":
+        break
+
+    ripetuto = True
+#esercizio ciclo range
+x = int(input("Inserisci il numero massimo: "))
+
+for i in range(2, x + 1, 2):
+    print(i)
+
+    #esercizio extra 1
+       
+while True:
+
+    scelta = input("Puoi scegliere esercizio 1, 2, 3 oppure end per uscire: ")
+
+
+    if scelta == "1":
+
+        # ESERCIZIO 1
+        numeri = []
+
+        x = int(input("Inserisci un numero: "))
+
+        while x != 0:
+            numeri.append(x)
+            x = int(input("Inserisci un numero: "))
+
+        somma = 0
+
+        for x in numeri:
+            somma = somma + x
+
+        print("La somma è:", somma)
+
+
+    if scelta == "2":
+
+        # ESERCIZIO 2
+        parola = input("Inserisci una parola: ")
+
+        for x in parola:
+            print(x)
+
+
+    if scelta == "3":
+
+        # ESERCIZIO 3
+        x = int(input("Inserisci il numero massimo: "))
+
+        for i in range(2, x + 1, 2):
+            print(i)
+
+
+    if scelta == "end":
+        break
+
+#esercizio extra 2
+lista = []
+while True:
+
+    scelta = input(
+        "Scegli: aggiungi, modifica, rimuovi, visualizza, svuota oppure end: ")
+        if scelta == "aggiungi":
+        elemento = input("Inserisci un elemento: ")
+        lista.append(elemento)
