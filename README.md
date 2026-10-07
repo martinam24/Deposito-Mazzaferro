@@ -1,4 +1,3 @@
 # Corso_Python_Ottobre
 
-Martina Mazzaferro
-Email: martinam2497@gmail.com
+Martina Mazzaferro - martinam2497@gmail.com
