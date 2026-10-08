@@ -119,12 +119,33 @@ while True:
     if scelta == "end":
         break
 
-#esercizio extra 2
-lista = []
-while True:
 
-    scelta = input(
-        "Scegli: aggiungi, modifica, rimuovi, visualizza, svuota oppure end: ")
-        if scelta == "aggiungi":
-        elemento = input("Inserisci un elemento: ")
-        lista.append(elemento)
+
+#ultimo esercizio della giornata
+x = int(input("Inserisci un numero positivo: "))
+
+while x <= 0:
+    x = int(input("Devi inserire un numero positivo: "))
+
+somma_pari = 0
+
+for i in range(2, x + 1, 2):
+    somma_pari = somma_pari + i
+
+print("La somma dei pari è:", somma_pari)
+
+print("Numeri dispari:") #trova il numero dispari
+
+for i in range(1, x + 1, 2):
+    print(i)
+#numero divisibile 
+divisori = 0
+
+for i in range(1, x + 1):
+    if x % i == 0:
+        divisori = divisori + 1
+
+if divisori == 2:
+    print(x, "è un numero primo")
+else:
+    print(x, "non è un numero primo")
