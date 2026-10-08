@@ -1,6 +1,5 @@
 #1. Esercizio Base: Indovina il numero
 # Inseriamo il numero segreto
-# Inseriamo il numero segreto
 numero_segreto = int(input("Inserisci il numero segreto: "))
 
 
